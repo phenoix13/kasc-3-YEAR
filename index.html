@@ -3,90 +3,360 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3 YEAR</title>
+    <title>3 YEAR SYLLABUS</title>
     <style>
-          *{
-             padding: 0%;
-             margin: 0%;
-            }
-        .b{
-            background-color: black;
-            color: aqua;
-            overflow: hidden;
-            max-width: 100%;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+        *{
+            padding: 0%;
+            margin: 0%;
         }
-        .b{
-            display: block;
-            background-color: black;
-        }
-        .b a{
-            text-decoration: none;
-            float: right;
-            padding: 15PX;
-            margin-left: 10PX;
-            margin-top: -9px;
-            color: aqua;
-            font-size: 15px;
-            font-style: BOLD;
-        }
-        .b h1{
-            padding: 5px;
-            font-size: 18px;
-        }
-        nav div a:hover{
-            background-color: aqua;
-            color: black;
-        }
+        /* for desktop*/
         body{
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: 100% 100% ;
+            background-color: black;
+            font-family: "Roboto Condensed", sans-serif;
+            width: 100vw;
+            height: 100vh;
         }
-        .c{
-            margin-top: 45px;
-            font-size: larger;
-            color:dodgerblue;
-            padding-left: 20px;
+        header{
+            width: 99vw;
+            min-height: 7%;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            overflow: hidden; 
+        }
+        /* logo and name*/
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+        img{
+            width: 100px;
+            height: 10%;
+            margin: 8px 0 8px 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        /* nav & hover*/
+        nav{
+            display: flex;
+            flex-direction: row;
+            margin-left: -30px;
         }
         li{
             list-style-type: none;
-            font-size: larger;
-            padding-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto 30px;
+            font-size: 1.8rem;
+        }
+        li a:last-child{
+            margin-right: 40px;
         }
         li a{
             text-decoration: none;
-            padding: 10px;
-            margin-left: 15px;
-            line-height: 30px;
             color: white;
+            transition: all 0.4s linear;
         }
+        li a:hover{
+            color: black;
+            padding: 6px;
+            background-color: white;
+        }
+        /* button & hover*/
+        button{
+            font-weight: 700;
+            text-align: center;
+            font-size: 1rem;
+            margin-right: 15px;
+            transition: all 0.4s linear 0s;
+        }
+        button a{
+            color: black;
+            text-decoration: none;
+        }
+        button:hover{
+            border: 2px solid;
+            border-radius: 5px;
+            border-color: aqua;
+            background-color: blue;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+
+        }
+        hr{
+            border: 2px solid brown;
+        }
+        /* section */     
+        .c{
+            color: white;
+            margin: 10px;
+        }   
+        .c h1{
+            text-align: center;
+            font-size: 3rem;
+            margin: 30px 0 0 0;
+            color: rgb(31, 235, 31);
+        }
+        .c h3{
+            margin: 20px;
+            font-size: 2rem;
+            color: rgb(218, 21, 31);
+        }
+        .sem{
+            margin-bottom: 50px;
+        }
+        .c .sub{
+            margin: 10px 0 10px 60px;
+        }
+        .c .sub a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+        }
+        span{
+            margin-right: 8px;
+            color: rgb(216, 27, 37);
+            font-size: 1.5rem;
+        }
+       /* for phone desktop*/
+       @media(max-width:900px){
+        header{
+            width: 100vw;
+            min-height: 13%;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            overflow: hidden; 
+        }
+        /* logo and name*/
         img{
-            width:40%;
-            height: 30%;
-            border-radius: 20PX;
-            border: 10PX solid black;
+            width: 80px;
+            height: 80px;
+            margin-left: 7px;
+        }
+        /* nav & hover*/
+        nav{
+            display: flex;
+            flex-direction: row;
+        }
+        li{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto 9px;
+            font-size: 1.7rem;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+            transition: all 0.4s linear;
+        }
+        li a:hover{
+            color: black;
+            padding: 4px;
+            background-color: white;
+        }
+        /* button & hover*/
+        button{
+            font-weight: 700;
+            text-align: center;
+            font-size: 1rem;
+            margin-left: -7px;
+            margin-right: 7px;
+            transition: all 0.4s linear 0s;
+            width: 90px;
+        }
+        button a{
+            color: black;
+            text-decoration: none;
+        }
+        button:hover{
+            border: 2px solid;
+            border-radius: 5px;
+            border-color: aqua;
+            background-color: blue;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+        /* section*/
+        .c{
+            color: white;
+            margin: 0px;
+        }   
+        .c h1{
+            text-align: center;
+            font-size: 2.2rem;
+            margin: 20px 0 0 0;
+            color: rgb(31, 235, 31);
+        }
+        .c h3{
+            margin: 10px;
+            font-size: 1.9rem;
+            color: rgb(235, 235, 38);
+        }
+        .sem{
+            margin-bottom: 50px;
+        }
+        .c .sub{
+            margin: 10px 0 10px 40px;
+        }
+        .c .sub a{
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+        }
+        span{
+            margin-right: 8px;
+            color: gold;
+            font-size: 1rem;
+        }
+        }
+        /* for phone normal view*/
+        @media(max-width:600px){
+            header{
+            width: 100vw;
+            min-height: 10%;
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            overflow: hidden; 
+        }
+        /* logo and name*/
+        img{
+            width: 60px;
+            height: 70px;
+            margin-left: 7px;
+        }
+        /* nav & hover*/
+        nav{
+            display: flex;
+            flex-direction: row;
+        }
+        li{
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto -15px;
+            font-size: 1.1rem;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+            transition: all 0.4s linear;
+        }
+        li a:hover{
+            color: black;
+            padding: 2px;
+            background-color: white;
+        }
+        /* button & hover*/
+        button{
+            font-weight: 700;
+            text-align: center;
+            font-size: 0.7rem;
+            margin-left: -7px;
+            margin-right: 7px;
+            transition: all 0.4s linear 0s;
+            width: 60px;
+        }
+        button a{
+            color: black;
+            text-decoration: none;
+        }
+        button:hover{
+            border: 2px solid;
+            border-radius: 5px;
+            border-color: aqua;
+            background-color: blue;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+        /* section*/
+        .c{
+            color: white;
+            margin: 0px;
+        }   
+        .c h1{
+            text-align: center;
+            font-size: 1.7rem;
+            margin: 20px 0 0 0;
+            color: rgb(31, 235, 31);
+        }
+        .c h3{
+            margin: 10px;
+            font-size: 1.3rem;
+            color: rgb(235, 235, 38);
+        }
+        .sem{
+            margin-bottom: 50px;
+        }
+        .c .sub{
+            margin: 10px 0 8px 40px;
+        }
+        .c .sub a{
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+        }
+        span{
+            margin-right: 8px;
+            color: gold;
+            font-size: 1rem;
+        }
         }
     </style>
 </head>
-<body background="https://i.ibb.co/FVNjd7c/360-F-419269782-9-Ls-P3-TQnd-MVn-Z2j3-Zh-TPh-Mjaq-Qp-FAth9.jpg">
-<NAV>
-    <div class="b">
-        <h1 style="text-align: center;">KASC SYLLABUS</h1>
-        <a href="">CONTACT</a>
-        <a href="">ABOUT</a>
-        <a href="https://phenoix13.github.io/kasc-main/">HOME</a>
-    </div>
-</NAV>
-<DIV class="c">
-    <h2>
-        3 YEAR SEMESTERS:
-    </h2>
-    <ul>
-        <li><a href="">V SEMESTER</a></li>
-        <li><a href="">VI SEMESTER</a></li>
-    </ul>
-</DIV>
-<center>
-</center>
+<body>
+    <header>
+        <div class="logo">
+        <img src="https://i.ibb.co/pJVLMbc/stydy-logo.jpg">
+        </div>
+        <nav>
+            <li><a href="https://phenoix13.github.io/home-page-kasc/">
+                HOME
+            </a></li>
+            <li class="list"><a title="sorry,Go back home">
+                COURSE
+            </a>
+            </li>
+            <li><a href="https://phenoix13.github.io/kasc-news/">
+                NEWS
+            </a></li>
+            <button> 
+                <a href="mailto:teamphenoix13@gamil.com">CONTACT US
+                </a>
+            </button>
+        </nav>
+    </header>
+    <hr>
+    <section>
+        <div class="c">
+            <h1>3 Year Materials</h1>
+            <br>
+            <h3>V Semster Syllabus Materials</h3>
+            <div class="sem">
+                <h4 class="sub"><span>&cir;</span><a href="">RDBMS & Oracle</a></h4>
+                <h4 class="sub"><span>&cir;</span><a href="">Visual Basic</a></h4>
+                <h4 class="sub"><span>&cir;</span><a href="">Programming Lab-VB & Oracle</a></h4>
+                <h4 class="sub"><span>&cir;</span><a href="">Python</a></h4>
+                <h4 class="sub"><span>&cir;</span><a href="">Software Testing</a></h4>
+            </div>
+            <h3>VI Semster Syllabus Materials</h3>
+            <div class="sem">
+                <h4 class="sub"><span>&cir;</span><a href="">Graphics & Multimedia</a></h4>
+                <h4 class="sub"><span>&cir;</span><a href="">English-2</a></h4>
+                <h4 class="sub"><span>&cir;</span><a href="">Programming Lab Graphics & Multimedia</a></h4>
+                <h4 class="sub"><span>&cir;</span><a href="">Software Testing Lab</a></h4>
+            </div>
+
+        </div>
+    </section>
 </body>
 </html>
