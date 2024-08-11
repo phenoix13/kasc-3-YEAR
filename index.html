@@ -5,328 +5,225 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3 YEAR SYLLABUS</title>
     <style>
-       @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-        *{
-            padding: 0%;
-            margin: 0%;
-        }
-        /* for desktop*/
-        body{
-            background-color: black;
-            font-family: "Roboto Condensed", sans-serif;
-            width: 100vw;
-            height: 100vh;
-        }
-        header{
-            width: 99vw;
-            min-height: 10%;
-            display: flex;
-            justify-content: space-between; 
-            align-items: center;
-            overflow: hidden; 
-        }
-        /* logo and name*/
-        .logo{
-            display: flex;
-            align-items: center;
-        }
-        img{
-            width: 7rem;
-            height: 7rem;
-            margin: 8px 0 8px 20px;
-            align-items: center;
-            justify-content: center;
-        }
-        /* nav & hover*/
-        nav{
-            display: flex;
-            flex-direction: row;
-        }
-        li{
-            list-style-type: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: auto 40px;
-            font-size: 2.2rem;
-        }
-        li a{
-            text-decoration: none;
-            padding: 10px;
-            color: white;
-            transition: all 0.4s linear;
-        }
-        li a:hover{
-            color: black;
-            padding: 10px;
-            background-color: white;
-        }       
-        /* button & hover*/
-        button{
-            font-weight: 700;
-            text-align: center;
-            margin-right: 20px;
-            transition: all 0.4s linear 0s;
-        }
-        button a{
-            color: black;
-            text-decoration: none;
-            font-size: 1.8rem;
-        }
-        button:hover{
-            border: 2px solid;
-            border-radius: 10px;
-            border-color: aqua;
-            background-color: blue;
-            color: white;
-        }
-        hr{
-            border: 2.5px solid brown;
-        }  
-        /* section*/ 
-        .c{
-            color: white;
-            margin: 10px;
-        }   
-        .c h1{
-            text-align: center;
-            font-size: 3rem;
-            margin: 30px 0 0 0;
-            color: rgb(31, 235, 31);
-        }
-        .c h3{
-            margin: 20px;
-            font-size: 2rem;
-            color: rgb(218, 21, 31);
-        }
-        .sem{
-            margin-bottom: 50px;
-        }
-        .c .sub{
-            margin: 10px 0 10px 60px;
-        }
-        .c .sub a{
-            text-decoration: none;
-            color: white;
-            font-size: 1.5rem;
-        }
-        span{
-            margin-right: 8px;
-            color: rgb(216, 27, 37);
-            font-size: 1.5rem;
-        }
-    /* for phone desktop*/
-    @media(max-width:900px){
-        img{
-            width: 6.5rem;
-            height: 6.5rem;
-            margin-left: 7px;
-        }
-        /* nav & hover*/
-        nav{
-            display: flex;
-            flex-direction: row;
-            margin-left: 0rem;
-
-        }
-        li{
-            list-style-type: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: auto 9px;
-            font-size: 1.5rem;
-        }
-        li a{
-            text-decoration: none;
-            color: white;
-            transition: all 0.4s linear;
-        }
-        li a:hover{
-            color: black;
-            padding: 10px;
-            background-color: white;
-        }
-        /* nav list*/
-        .list{
-            display: inline-block;
-        }
-        .child{
-            position: absolute;
-            display: none;
-            background-color: white;
-            z-index: 1;
-        }
-        .child a{
-            color: black;
-            display: block;
-            padding: 10px;
-            transition: all 0.4s linear;
-        }
-        .child a:hover{
-            color: white;
-            background-color: black;
-        }
-        .list:hover .child {
-            display: block;
-        }
-        /* button & hover*/
-        button{
-            text-align: center;
-            transition: all 0.4s linear 0s;
-        }
-        button a{
-            color: black;
-            text-decoration: none;
-            font-size: 1.1rem;
-        }
-        button:hover{
-            border: 2px solid;
-            border-radius: 10px;
-            border-color: aqua;
-            background-color: rgb(255, 0, 0);
-            color: white;
-        }
-        /* section*/
-        .c{
-            color: white;
-            margin: 0px;
-        }   
-        .c h1{
-            text-align: center;
-            font-size: 2.2rem;
-            margin: 20px 0 0 0;
-            color: rgb(31, 235, 31);
-        }
-        .c h3{
-            margin: 10px;
-            font-size: 1.9rem;
-            color: rgb(218, 21, 31);
-        }
-        .sem{
-            margin-bottom: 50px;
-        }
-        .c .sub{
-            margin: 10px 0 10px 40px;
-        }
-        .c .sub a{
-            text-decoration: none;
-            color: white;
-            font-size: 1.5rem;
-        }
-        span{
-            margin-right: 8px;
-            color: rgb(218, 21, 31);
-            font-size: 1rem;
-        }
-        }
-        /* for phone normal view*/
-        @media(max-width:600px){
-        /* logo and name*/
-        img{
-            width: 65px;
-            height: 65px;
-        }
-        /* nav & hover*/
-        nav{
-            display: flex;
-            flex-direction: row;
-            margin-left: -5px;
-        }
-        li{
-            list-style-type: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: auto 5px;
-            font-size: 1rem;
-        }
-        li a{
-            text-decoration: none;
-            color: white;
-            transition: all 0.4s linear;
-        }
-        li a:hover{
-            color: black;
-            padding: 10px;
-            background-color: white;
-        }
-        /* nav list*/
-        .list{
-            display: inline-block;
-        }
-        .child{
-            position: absolute;
-            display: none;
-            background-color: white;
-            z-index: 1;
-        }
-        .child a{
-            color: black;
-            display: block;
-            padding: 10px;
-            transition: all 0.4s linear;
-        }
-        .child a:hover{
-            color: white;
-            background-color: black;
-        }
-        .list:hover .child {
-            display: block;
-        }
-        /* button & hover*/
-        button{
-            background-color: none;
-            text-align: center;
-            transition: all 0.4s linear 0s;
-        }
-        button a{
-            color: black;
-            text-decoration: none;
-            font-size: 0.5rem;
-        }
-        button:hover{
-            border: 2px solid;
-            border-radius: 10px;
-            border-color: aqua;
-            background-color: blue;
-            color: white;
-        }
-        /* section*/
-        .c{
-            color: white;
-            margin: 0px;
-        }   
-        .c h1{
-            text-align: center;
-            font-size: 1.7rem;
-            margin: 20px 0 0 0;
-            color: rgb(31, 235, 31);
-        }
-        .c h3{
-            margin: 10px;
-            font-size: 1.3rem;
-            color: rgb(218, 21, 31);
-        }
-        .sem{
-            margin-bottom: 50px;
-        }
-        .c .sub{
-            margin: 10px 0 8px 40px;
-        }
-        .c .sub a{
-            text-decoration: none;
-            color: white;
-            font-size: 1rem;
-        }
-        span{
-            margin-right: 8px;
-            color: rgb(218, 21, 31);
-            font-size: 1rem;
-        }
-        }
-    </style>
-</head>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+         *{
+             padding: 0%;
+             margin: 0%;
+         }
+         /* for desktop*/
+         body{
+             background-color: black;
+             font-family: "Roboto Condensed", sans-serif;
+             width: 100vw;
+             height: 100vh;
+         }
+         header{
+             max-width:100%;
+             min-height: 10%;
+             display: flex;
+             justify-content: space-between; 
+             align-items: center;
+             overflow: hidden; 
+         }
+         /* logo and name*/
+         .logo{
+             display: flex;
+             align-items: center;
+         }
+         img{
+             width: 7rem;
+             height: 7rem;
+             padding: 8px 0 8px 20px;
+             align-items: center;
+             justify-content: center;
+         }
+         /* nav & hover*/
+         nav{
+             display: flex;
+             flex-direction: row;
+         }
+         li{
+             list-style-type: none;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             margin: auto 1rem;
+             font-size: 2.2rem;
+         }
+         li a{
+             text-decoration: none;
+             padding: 10px;
+             color: white;
+             transition: all 0.4s linear;
+         }
+         li a:hover{
+             color: black;
+             padding: 10px;
+             background-color: white;
+         }       
+         /* button & hover*/
+         button{
+             font-weight: 700;
+             text-align: center;
+             margin-right: 20px;
+             transition: all 0.4s linear 0s;
+         }
+         button a{
+             color: black;
+             text-decoration: none;
+             font-size: 1.4rem;
+         }
+         button:hover{
+             border: 2px solid;
+             border-radius: 10px;
+             border-color: aqua;
+             background-color: blue;
+             color: white;
+         }
+         hr{
+             border: 2.5px solid brown;
+         }   
+         /* section */     
+         .c{
+             color: white;
+             margin: 10px;
+         }   
+         .c h1{
+             text-align: center;
+             font-size: 3rem;
+             margin: 30px 0 0 0;
+             color: rgb(31, 235, 31);
+         }
+         .c h3{
+             margin: 20px;
+             font-size: 2rem;
+             color: rgb(235, 235, 38);
+         }
+         .sem{
+             margin-bottom: 50px;
+         }
+         .c .sub{
+             margin: 10px 0 10px 60px;
+         }
+         .c .sub a{
+             text-decoration: none;
+             color: white;
+             font-size: 1.5rem;
+         }
+         span{
+             margin-right: 8px;
+             color: gold;
+             font-size: 1.5rem;
+         }
+     /* for phone desktop*/
+     @media(max-width:760px){
+         img{
+             width: 6.5rem;
+             height: 6.5rem;
+         }
+         /* nav & hover*/
+         nav{
+             margin-left: 0rem;
+         }
+         li{
+             margin: auto 9px;
+             font-size: 1.5rem;
+         }
+         li a:hover{
+             padding: 8px;
+         }
+         /* nav list*/
+         .child a{
+             padding: 8px;
+         }
+         button a{
+             font-size: 1.1rem;
+         }
+         button:hover{
+             border-radius: 8px;
+         }
+         .c h1{
+             font-size: 2.2rem;
+             margin: 20px 0 0 0;
+         }
+         .c h3{
+             margin: 10px;
+             font-size: 1.9rem;
+         }
+         .sem{
+             margin-bottom: 50px;
+         }
+         .c .sub{
+             margin: 10px 0 10px 40px;
+         }
+         .c .sub a{
+             font-size: 1.5rem;
+         }
+         span{
+             margin-right: 8px;
+             font-size: 1rem;
+         }
+         }
+         /* for phone normal view*/
+         @media(max-width:520px){
+         header{
+            height: 8%;
+         }
+         /* logo and name*/
+         img{
+             width: 55px;
+             height: 55px;
+         }
+         /* nav & hover*/
+         li{
+             margin: auto 0.3rem;
+             font-size: 0.8rem;
+         }
+         li a:hover{
+             padding: 7px;
+         }
+         /* button & hover*/
+          button{
+             margin-right: 0.8rem;
+         }
+         button a{
+             font-size: 0.5rem;
+         }
+         button:hover{
+             border-radius: 7px;
+         }
+         /* button & hover*/
+         button a{
+             font-size: 0.5rem;
+         }
+         button:hover{
+             border-radius: 7px;
+         }
+         /* section*/
+         .c h1{
+             font-size: 1.7rem;
+             margin: 20px 0 0 0;
+         }
+         .c h3{
+             margin: 10px;
+             font-size: 1.3rem;
+         }
+         .sem{
+             margin-bottom: 50px;
+         }
+         .c .sub{
+             margin: 10px 0 8px 40px;
+         }
+         .c .sub a{
+             font-size: 1rem;
+         }
+         span{
+             margin-right: 8px;
+             font-size: 1rem;
+         }
+         }
+     </style>
+ </head>
 <body>
     <header>
         <div class="logo">
@@ -343,11 +240,11 @@
             <li class="new"><a href="https://phenoix13.github.io/kasc-news/">
                 NEWS
             </a></li>
-        </nav>
             <button> 
                 <a href="mailto:teamphenoix13@gamil.com">CONTACT US
                 </a>
             </button>
+        </nav>
     </header>
     <hr>
     <section>
